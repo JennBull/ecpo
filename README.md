@@ -14,19 +14,28 @@ XQuery IDs Reader: To test the XQuery code please install the application "Stylu
           , $nl,
           doc('file:///C:/ecpo-master/jingbao/1939/04/.xml')/fold/@xml:id/string()
 
-    please write the name of the new xml file before the ".xml" in the previously mentioned link. 
-    PS: In order to test the XQuery file it is very important to download the whole project and place it in C. Not inside any other folder       but in C. 
+ please write the name of the new xml file before the ".xml" in the previously mentioned link. 
+ PS: In order to test the XQuery file it is very important to download the whole project and place it in C. Not inside any other folder   but in C. 
     
-1. let $nl := "&#10;" 
+1.          
+          
+          let $nl := "&#10;" 
+
 This line defines a value to the variable $nl. A new line get started whenever $nl is called. 
 
-2. let $string := concat(
+2.   
+                 
+          let $string := concat(
 This line defines a string variable and inside this line more than xml files can be called.
 
-3.doc('file:///C:/ecpo-master/jingbao/1939/04/jb_3795_1939-04-21_0001+0004.xml')/fold/@xml:id/string(), $nl, 
+3.
+        
+          doc('file:///C:/ecpo-master/jingbao/1939/04/jb_3795_1939-04-21_0001+0004.xml')/fold/@xml:id/string(), $nl, 
 In this line the xml's path is given to access the xml file and with this part /fold/@xml:id/string() the ID of the xml file get called.
 
-4. return $string
+4. 
+        
+          return $string
 This line call the string (all the IDs) we defined in step no.2
 
 ------------------------------------------------ End of XQuery explanation
